@@ -75,5 +75,23 @@ document.querySelector("#preco5").textContent = `R$ ${livro5.preco}`
 // ==================================================
 
 const cadastro = document.querySelector("#cadastro")
+const aparecer = document.querySelector("#aparecer")
+const novoLivro = document.querySelector("#addNovoLivro")
 
-cadastro.addEventListener("click", () => {})
+cadastro.addEventListener("click", () => {
+	aparecer.classList.toggle("hidden")
+})
+
+novoLivro.addEventListener("click", () => {
+	const form = {
+		capa: document.querySelector("#add-capa"),
+		titulo: document.querySelector("#add-titulo"),
+		genero: document.querySelector("#add-genero"),
+		autor: document.querySelector("#add-autor"),
+		preco: document.querySelector("#add-preco"),
+		catalogo: document.querySelector("#catalogo"),
+	}
+
+	console.log(form.titulo.value)
+	console.log(form.preco.value)
+})

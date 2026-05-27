@@ -1,139 +1,104 @@
 <!doctype html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-		<title>Livraria Jubis | Home</title>
-	</head>
-	<body
-		class="font-['Poppins'] min-h-screen bg-[linear-gradient(58deg,#191919_0%,#18697B_58%,#001F61_100%)]"
-	>
-		<header>
-			<menu
-				class="flex justify-between items-center gap-4 px-6 py-2 shadow bg-[#1E1E1E]"
-			>
-				<span class="flex items-center font-bold">
-					<img
-						class="w-16 h-auto"
-						src="IMG/menu-icon.png"
-						alt="simbolo de livro e xícara"
-					/>
-					<p class="text-white">Livraria Jubs</p>
-				</span>
-				<nav>
-					<button
-						class="px-[18px] py-[10px] bg-[#0066EB] text-white rounded-2xl"
-						id="cadastro"
-					>
-						Cadastrar Livro
-					</button>
-				</nav>
-			</menu>
-		</header>
-		<main>
-			<h1
-				class="text-white text-[clamp(2rem,4vw,2.5rem)] text-center font-bold pt-8"
-			>
-				Acesse os Livros
-			</h1>
-			<p class="text-[#D4D4D4] text-center pb-14">
-				Explore e organize sua coleção!
-			</p>
-			<section class="w-screen flex flex-wrap justify-center px-4 gap-6">
-				<div
-					class="bg-[linear-gradient(90deg,rgba(30,30,30,0.6)_0%,rgba(46,46,46,0.3)_100%)] shadow-lg rounded-2xl px-8 py-4 hover:scale-105 transition duration-300"
-				>
-					<img
-						class="w-50 h-[calc(100%-150px)] rounded-2xl"
-						src=""
-						alt=""
-						id="capa"
-					/>
-					<p id="titulo" class="text-white font-bold pt-4"></p>
-					<p id="autor" class="text-white"></p>
-					<p
-						id="genero"
-						class="text-white bg-[#007E7E] rounded-[8px] w-fit px-[10px] py-[3px] my-2"
-					></p>
-					<p id="preco" class="text-white font-medium"></p>
-				</div>
-				<div
-					class="bg-[linear-gradient(90deg,rgba(30,30,30,0.6)_0%,rgba(46,46,46,0.3)_100%)] shadow-lg rounded-2xl px-8 py-4 hover:scale-105 transition duration-300"
-				>
-					<img
-						class="w-50 h-[calc(100%-150px)] rounded-2xl"
-						src=""
-						alt=""
-						id="capa2"
-					/>
-					<p id="titulo2" class="text-white font-bold pt-4"></p>
-					<p id="autor2" class="text-white"></p>
-					<p
-						id="genero2"
-						class="text-white bg-[#007E7E] rounded-[8px] w-fit px-[10px] py-[3px] my-2"
-					></p>
-					<p id="preco2" class="text-white font-medium"></p>
-				</div>
-				<div
-					class="bg-[linear-gradient(90deg,rgba(30,30,30,0.6)_0%,rgba(46,46,46,0.3)_100%)] shadow-lg rounded-2xl px-8 py-4 hover:scale-105 transition duration-300"
-				>
-					<img
-						class="w-50 h-[calc(100%-150px)] rounded-2xl"
-						src=""
-						alt=""
-						id="capa3"
-					/>
-					<p id="titulo3" class="text-white font-bold pt-4"></p>
-					<p id="autor3" class="text-white"></p>
-					<p
-						id="genero3"
-						class="text-white bg-[#007E7E] rounded-[8px] w-fit px-[10px] py-[3px] my-2"
-					></p>
-					<p id="preco3" class="text-white font-medium"></p>
-				</div>
-				<div
-					class="bg-[linear-gradient(90deg,rgba(30,30,30,0.6)_0%,rgba(46,46,46,0.3)_100%)] shadow-lg rounded-2xl px-8 py-4 hover:scale-105 transition duration-300"
-				>
-					<img
-						class="w-50 h-[calc(100%-150px)] rounded-2xl"
-						src=""
-						alt=""
-						id="capa4"
-					/>
-					<p id="titulo4" class="text-white font-bold pt-4"></p>
-					<p id="autor4" class="text-white"></p>
-					<p
-						id="genero4"
-						class="text-white bg-[#007E7E] rounded-[8px] w-fit px-[10px] py-[3px] my-2"
-					></p>
-					<p id="preco4" class="text-white font-medium"></p>
-				</div>
-				<div
-					class="bg-[linear-gradient(90deg,rgba(30,30,30,0.6)_0%,rgba(46,46,46,0.3)_100%)] shadow-lg rounded-2xl px-8 py-4 hover:scale-105 transition duration-300"
-				>
-					<img
-						class="w-50 h-[calc(100%-150px)] rounded-2xl"
-						src=""
-						alt=""
-						id="capa5"
-					/>
-					<p id="titulo5" class="text-white font-bold pt-4"></p>
-					<p id="autor5" class="text-white"></p>
-					<p
-						id="genero5"
-						class="text-white bg-[#007E7E] rounded-[8px] w-fit px-[10px] py-[3px] my-2"
-					></p>
-					<p id="preco5" class="text-white font-medium"></p>
-				</div>
-			</section>
-		</main>
 
-		<script src="JS/script.js" defer></script>
-	</body>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="IMG/favicon.ico" type="image/x-icon" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="./src/output.css">
+	<title>Livraria Jubis | Home</title>
+</head>
+
+<body class="font-['Poppins'] min-h-dvh overflow-x-hidden bg-linear-to-tl from-zinc-900 via-cyan-800 to-blue-950">
+	<header>
+		<menu class="flex justify-between items-center gap-4 px-6 py-2 shadow bg-zinc-900">
+			<span class="flex items-center font-bold">
+				<img class="w-16 h-auto" src="IMG/menu-icon.png" alt="pequeno principe e a raposa" />
+				<p class="text-white">Livraria Jubs</p>
+			</span>
+			<nav>
+				<button class=" px-4 py-2 bg-blue-600 text-white rounded-2xl hover:bg-blue-800" id="cadastro">
+					Cadastrar Livro
+				</button>
+			</nav>
+		</menu>
+	</header>
+	<main>
+		<h1 class="text-white text-2xl text-center font-bold pt-8 pb-3">Acesse os Livros</h1>
+		<p class="text-neutral-300 text-center pb-10">Explore e organize sua coleção!</p>
+
+		<!-- Form Adicionar Livro -->
+		<section class="flex flex-col items-center justify-center bg-black text-white" id="aparecer">
+			<h2 class="text-4xl text-center font-bold pt-4 pb-6">
+				Cadastre seus Livros
+			</h2>
+			<form class="bg-white p-6 rounded-2xl shadow-lg w-96">
+				<input type="text" placeholder="Link da capa do livro"
+					class="w-full mb-3 p-3 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-[#0F2A44]"
+					id="add-capa" />
+				<input type="text" placeholder="Título do livro"
+					class="w-full mb-3 p-3 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-[#0F2A44]"
+					id="add-titulo" />
+				<input type="text" placeholder="Gênero"
+					class="w-full mb-3 p-3 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-[#0F2A44]"
+					id="add-genero" />
+
+				<input type="text" placeholder="Autor"
+					class="w-full mb-3 p-3 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-[#0F2A44]"
+					id="add-autor" />
+
+				<input type="number" placeholder="Preço"
+					class="w-full mb-3 p-3 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-[#0F2A44]"
+					id="add-preco" />
+
+				<button class="w-full bg-[#0F2A44] text-white p-3 rounded-xl hover:opacity-90" id="addNovoLivro">
+					Adicionar livro
+				</button>
+			</form>
+		</section>
+
+		<!-- Catálogo de Livros -->
+		<section class="flex flex-wrap justify-center w-full gap-6 px-4">
+			<div class="card">
+				<img class="w-50 h-[calc(100%-150px)] rounded-2xl" src="" alt="" id="capa" />
+				<p id="titulo" class="pt-4 font-bold text-white"></p>
+				<p id="autor" class="text-white"></p>
+				<p id="genero" class="text-white bg-[#007E7E] rounded-2xl w-fit px-4 py-2"></p>
+				<p id="preco" class="font-medium text-white"></p>
+			</div>
+			<div class="card">
+				<img class="w-50 h-[calc(100%-150px)] rounded-2xl" src="" alt="" id="capa2" />
+				<p id="titulo2" class="pt-4 font-bold text-white"></p>
+				<p id="autor2" class="text-white"></p>
+				<p id="genero2" class="text-white bg-[#007E7E] rounded-2xl w-fit px-4 py-3 my-2"></p>
+				<p id="preco2" class="font-medium text-white"></p>
+			</div>
+			<div class="card">
+				<img class="w-50 h-[calc(100%-150px)] rounded-2xl" src="" alt="" id="capa3" />
+				<p id="titulo3" class="pt-4 font-bold text-white"></p>
+				<p id="autor3" class="text-white"></p>
+				<p id="genero3" class="text-white bg-[#007E7E] rounded-2xl w-fit px-3 py-3 my-2"></p>
+				<p id="preco3" class="font-medium text-white"></p>
+			</div>
+			<div class="card">
+				<img class="w-50 h-[calc(100%-150px)] rounded-2xl" src="" alt="" id="capa4" />
+				<p id="titulo4" class="pt-4 font-bold text-white"></p>
+				<p id="autor4" class="text-white"></p>
+				<p id="genero4" class="text-white bg-[#007E7E] rounded-2xl w-fit px-4 py-4 my-2"></p>
+				<p id="preco4" class="font-medium text-white"></p>
+			</div>
+			<div class="card">
+				<img class="w-50 h-[calc(100%-150px)] rounded-2xl" src="" alt="" id="capa5" />
+				<p id="titulo5" class="pt-4 font-bold text-white"></p>
+				<p id="autor5" class="text-white"></p>
+				<p id="genero5" class="text-white bg-[#007E7E] rounded-3xl w-fit px-3.5 py-3.5 my-2"></p>
+				<p id="preco5" class="font-medium text-white"></p>
+			</div>
+		</section>
+	</main>
+
+	<script src="JS/script.js" defer></script>
+</body>
+
 </html>
