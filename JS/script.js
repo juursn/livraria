@@ -77,11 +77,15 @@ document.querySelector("#preco5").textContent = `R$ ${livro5.preco}`
 const cadastro = document.querySelector("#cadastro")
 const aparecer = document.querySelector("#aparecer")
 const novoLivro = document.querySelector("#addNovoLivro")
+const adicionarCatalogo = document.querySelector("#catalogo")
 
+// Aparecer form de adicionar livro
 cadastro.addEventListener("click", () => {
 	aparecer.classList.toggle("hidden")
+	aparecer.classList.toggle("flex")
 })
 
+//Adiciona um novo livro ao topo do catálogo
 novoLivro.addEventListener("click", () => {
 	const form = {
 		capa: document.querySelector("#add-capa"),
@@ -89,9 +93,35 @@ novoLivro.addEventListener("click", () => {
 		genero: document.querySelector("#add-genero"),
 		autor: document.querySelector("#add-autor"),
 		preco: document.querySelector("#add-preco"),
-		catalogo: document.querySelector("#catalogo"),
 	}
 
-	console.log(form.titulo.value)
-	console.log(form.preco.value)
+	// Verifica se todas as informações foram preenchidas
+	if (
+		form.autor.value === "" ||
+		form.capa.value === "" ||
+		form.genero.value === "" ||
+		form.titulo.value === "" ||
+		form.preco.value === ""
+	) {
+		window.alert("Preencha todos os campos para continuar!")
+	} else {
+		//Formato do card do livro
+		const novoCard = `<div class="card">
+	<img class="w-50 h-[calc(100%-150px)] rounded-2xl" src="${form.capa.value}" alt="Capa do livro" />
+
+	<p class="pt-4 font-bold text-white">${form.titulo.value}</p>
+	<p class="text-white">${form.autor.value}</p>
+	<p class="text-white bg-[#007E7E] rounded-2xl w-fit px-4 py-2 my-2">${form.genero.value}</p>
+	<p class="font-medium text-white">R$ ${form.preco.value}</p>
+	</div>`
+
+		catalogo.insertAdjacentHTML("afterbegin", novoCard) //Adicona o livro no topo
+
+		//Limpa as informações do input após o envio
+		form.capa.value = ""
+		form.titulo.value = ""
+		form.genero.value = ""
+		form.autor.value = ""
+		form.preco.value = ""
+	}
 })

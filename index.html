@@ -12,56 +12,61 @@
 
 <body class="font-['Poppins'] min-h-dvh overflow-x-hidden bg-linear-to-tl from-zinc-900 via-cyan-800 to-blue-950">
 	<header>
-		<menu class="flex justify-between items-center gap-4 px-6 py-2 shadow bg-zinc-900">
+		<menu class="flex items-center justify-between gap-4 px-6 py-2 shadow bg-zinc-900">
 			<span class="flex items-center font-bold">
 				<img class="w-16 h-auto" src="IMG/menu-icon.png" alt="pequeno principe e a raposa" />
 				<p class="text-white">Livraria Jubs</p>
 			</span>
 			<nav>
-				<button class=" px-4 py-2 bg-blue-600 text-white rounded-2xl hover:bg-blue-800" id="cadastro">
+				<button class="px-4 py-2 text-white bg-blue-600 rounded-2xl hover:bg-blue-800" id="cadastro">
 					Cadastrar Livro
 				</button>
 			</nav>
 		</menu>
 	</header>
 	<main>
-		<h1 class="text-white text-2xl text-center font-bold pt-8 pb-3">Acesse os Livros</h1>
-		<p class="text-neutral-300 text-center pb-10">Explore e organize sua coleção!</p>
+		<h1 class="pt-8 pb-3 text-2xl font-bold text-center text-white">Acesse os Livros</h1>
+		<p class="pb-10 text-center text-neutral-300">Explore e organize sua coleção!</p>
 
 		<!-- Form Adicionar Livro -->
-		<section class="flex flex-col items-center justify-center bg-black text-white" id="aparecer">
-			<h2 class="text-4xl text-center font-bold pt-4 pb-6">
+		<section class="flex-col items-center justify-center hidden text-white" id="aparecer">
+			<h2 class="pt-4 pb-6 text-4xl font-bold text-center ">
 				Cadastre seus Livros
 			</h2>
-			<form class="bg-white p-6 rounded-2xl shadow-lg w-96">
+			<div class="w-full p-6 my-6 shadow-lg bg-zinc-900/60 lg:w-1/2 rounded-2xl">
 				<input type="text" placeholder="Link da capa do livro"
 					class="w-full mb-3 p-3 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-[#0F2A44]"
-					id="add-capa" />
+					id="add-capa" required />
+				<!-- Fim da capa -->
 				<input type="text" placeholder="Título do livro"
 					class="w-full mb-3 p-3 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-[#0F2A44]"
-					id="add-titulo" />
+					id="add-titulo" required />
+				<!-- Fim do título -->
 				<input type="text" placeholder="Gênero"
 					class="w-full mb-3 p-3 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-[#0F2A44]"
-					id="add-genero" />
-
+					id="add-genero" required />
+				<!-- Fim do gênero -->
 				<input type="text" placeholder="Autor"
 					class="w-full mb-3 p-3 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-[#0F2A44]"
-					id="add-autor" />
-
+					id="add-autor" required />
+				<!-- Fim do autor -->
 				<input type="number" placeholder="Preço"
 					class="w-full mb-3 p-3 border border-gray-300 rounded-xl outline-none focus:ring-2 focus:ring-[#0F2A44]"
-					id="add-preco" />
+					id="add-preco" required />
+				<!-- Fim do preço -->
 
-				<button class="w-full bg-[#0F2A44] text-white p-3 rounded-xl hover:opacity-90" id="addNovoLivro">
+				<button type="submit" class="w-full bg-[#0F2A44] text-white p-3 rounded-xl hover:opacity-90"
+					id="addNovoLivro">
 					Adicionar livro
 				</button>
-			</form>
+
+			</div>
 		</section>
 
 		<!-- Catálogo de Livros -->
-		<section class="flex flex-wrap justify-center w-full gap-6 px-4">
+		<section class="flex flex-wrap justify-center w-full gap-6 px-4 my-6" id="catalogo">
 			<div class="card">
-				<img class="w-50 h-[calc(100%-150px)] rounded-2xl" src="" alt="" id="capa" />
+				<img class="object-cover w-50 h-72 rounded-2xl" src="" alt="" id="capa" />
 				<p id="titulo" class="pt-4 font-bold text-white"></p>
 				<p id="autor" class="text-white"></p>
 				<p id="genero" class="text-white bg-[#007E7E] rounded-2xl w-fit px-4 py-2"></p>
